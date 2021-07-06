@@ -9,13 +9,11 @@ main()
 
     while ((c = getchar()) != EOF)
     {
-        if (c == BLANK)
-        {
-            if ((flag++) > 0)
-                continue;
-        }
-        else
+        if (c != BLANK)
             flag = 0;
+
+        if ((flag++) > 0)
+            continue;
 
         putchar(c);
     }
