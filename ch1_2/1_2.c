@@ -1,5 +1,5 @@
 #include <stdio.h>
-main () 
+main()
 {
 	int fahr, celsius;
 	int lower, upper, step;
@@ -14,7 +14,5 @@ main ()
 		celsius = 5 * (fahr - 32) / 9;
 		printf("%d\t%d\n", fahr, celsius);
 		fahr = fahr + step;
-
 	}
-
 }
